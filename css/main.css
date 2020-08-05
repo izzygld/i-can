@@ -1,0 +1,71 @@
+html,body,h1,h2,h3,h4 {font-family:"Lato", sans-serif}
+.mySlides {display:none}
+.w3-tag, .fa {cursor:pointer}
+.w3-tag {height:15px;width:15px;padding:0;margin-top:6px}
+
+.logo{
+    margin: 0 auto;
+    text-align: center;
+}
+img{
+  max-width: 100%;
+    height: auto;
+    border: 0;
+}
+.info{
+  display: flex;
+  flex-flow:wrap;
+  margin-bottom: 40px;
+  justify-content:space-between;
+  align-items:center;
+  padding: 10px 0px 10px 10px;
+  background: black;
+}
+.info div{
+  width: 16%;
+  padding-right: 10px;
+}
+.info div img{
+    width: 100%;
+}
+.card-bg{
+  height: 225px;
+  background-position: center;
+  background-size: cover;
+}
+
+.form-container{
+background: black;
+    -webkit-box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
+    max-width: 700px !important;
+    margin: 0 auto 100px;
+    padding: 25px 30px;
+    color: white;
+    border-radius: 10px;
+}
+
+.contact-sumbit{
+  margin: 0 auto;
+  max-width: 200px;
+}
+
+.contact-images{
+  /* display: flex;
+  background: white;
+  flex-flow:column; */
+}
+.contact-images a{
+  display: block;
+  margin-bottom: 10px;
+  transition: filter .3s ease-in-out;
+    -webkit-filter: grayscale(70%);
+    filter: grayscale(70%);
+}
+.contact-images a img{
+  transition: filter .3s ease-in-out;
+    -webkit-filter: grayscale(70%);
+}
+.contact-images a:hover img{
+    filter:drop-shadow(2px 2px 5px gray);
+}
