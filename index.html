@@ -10,24 +10,42 @@
 
 <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
 <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
 <body>
 
 <!-- Links (sit on top) -->
 <div class="w3-top">
   <div class="w3-row w3-large w3-light-grey">
     <div class="w3-col s3">
-      <a href="#" class="w3-button w3-block">Home</a>
+      <a href="#" class="w3-button w3-block english">Home</a>
+      <a href="#" class="w3-button w3-block hebrew">בית</a>
     </div>
     <div class="w3-col s3">
-      <a href="#plans" class="w3-button w3-block">Plans</a>
+      <a href="#plans" class="w3-button w3-block english">Plans</a>
+      <a href="#plans" class="w3-button w3-block hebrew">תוכניות</a>
     </div>
     <div class="w3-col s3">
-      <a href="#about" class="w3-button w3-block">About</a>
+      <a href="#about" class="w3-button w3-block english">About</a>
+      <a href="#about" class="w3-button w3-block hebrew">אודות</a>
     </div>
     <div class="w3-col s3">
-      <a href="#contact" class="w3-button w3-block">Contact</a>
+      <a href="#contact" class="w3-button w3-block english">Contact</a>
+      <a href="#contact" class="w3-button w3-block hebrew">ליצוֹר קשׁר</a>
     </div>
   </div>
+
+
+<div class="language">
+  <select id="select">
+       <option id="english" value="english">English</option>
+      <!-- <option id="spanish" value="spanish">Española</option> -->
+      <option id="hebrew" value="hebrew">עברית</option>
+  </select>
+</div>
+  <!-- <div class="hebrew-btn">
+    Hebrew
+   </div> -->
 </div>
 
 <!-- Content -->
@@ -35,7 +53,8 @@
 
 
 <div class="logo">
-  <img src="images/mo-logo.png">
+  <img src="images/mo-logo.png" class="english">
+  <img src="images/mo-logo-h.png" class="hebrew">
 </div>
 
   <!-- <div class="w3-panel">
@@ -51,8 +70,9 @@
 
 
       
-      <div class="w3-center">
-        <img src="images/mo-details.png">
+      <div class="w3-center big-image">
+        <img src="images/mo-details.png" class="english">
+        <img src="images/mo-side-h.png" class="hebrew">
       </div>
 
 
@@ -81,26 +101,6 @@
 
 
 </div>
-
-      <!-- <div class="w3-col l3 m6 w3-light-grey w3-container w3-padding-16">
-        <h3>Design</h3>
-        <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
-      </div>
-  
-      <div class="w3-col l3 m6 w3-grey w3-container w3-padding-16">
-        <h3>Branding</h3>
-        <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
-      </div>
-  
-      <div class="w3-col l3 m6 w3-dark-grey w3-container w3-padding-16">
-        <h3>Consultation</h3>
-        <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
-      </div>
-  
-      <div class="w3-col l3 m6 w3-black w3-container w3-padding-16">
-        <h3>Promises</h3>
-        <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
-      </div> -->
     </div>
 
 
@@ -109,7 +109,8 @@
     <div class="w3-display-container mySlides">
       <img src="images/moses-bg.jpg" style="width:100%">
       <div class="w3-display-topleft w3-container w3-padding-32">
-        <span class="w3-white w3-padding-large w3-animate-bottom">Opening Ceremony of Shop</span>
+        <span class="w3-white w3-padding-large w3-animate-bottom english">Opening Ceremony of Shop</span>
+        <span class="w3-white w3-padding-large w3-animate-bottom hebrew">טקס פתיחת חנות</span>
       </div>
     </div>
     <div class="w3-display-container mySlides">
@@ -143,13 +144,16 @@
   <!-- Grid -->
   <div class="w3-row-padding" id="plans">
     <div class="w3-center w3-padding-64">
-      <h3>Pricing Plans</h3>
-      <p>Choose a pricing plan that fits your needs.</p>
+      <h3 class="english">Pricing Plans</h3>
+      <h3 class="hebrew">תוכניות תמחור</h3>
+      <p class="english">Choose a pricing plan that fits your needs.</p>
+      <p class="hebrew">בחר תוכנית תמחור שמתאימה לצרכים שלך.</p>
     </div>
 
     <div class="w3-third w3-margin-bottom">
       <ul class="w3-ul w3-border w3-center w3-hover-shadow">
-        <li class="w3-black w3-xlarge w3-padding-32">Basic</li>
+        <li class="w3-black w3-xlarge w3-padding-32 english">Basic</li>
+        <li class="w3-black w3-xlarge w3-padding-32 hebrew">בסיסי</li>
         <li class="w3-padding-16"><b>10GB</b> Storage</li>
         <li class="w3-padding-16"><b>1 year</b> Support</li>
         <li class="w3-padding-16">
@@ -157,14 +161,16 @@
           <span class="w3-opacity">per month</span>
         </li>
         <li class="w3-light-grey w3-padding-24">
-          <button class="w3-button w3-green w3-padding-large">Sign Up</button>
+          <button class="w3-button w3-green w3-padding-large english btn-mid">Sign Up</button>
+          <button class="w3-button w3-green w3-padding-large hebrew btn-mid">הירשם</button>
         </li>
       </ul>
     </div>
 
     <div class="w3-third w3-margin-bottom">
       <ul class="w3-ul w3-border w3-center w3-hover-shadow">
-        <li class="w3-dark-grey w3-xlarge w3-padding-32">Pro</li>
+        <li class="w3-dark-grey w3-xlarge w3-padding-32 english">Pro</li>
+        <li class="w3-dark-grey w3-xlarge w3-padding-32 hebrew">מקצוֹעי</li>
         <li class="w3-padding-16"><b>25GB</b> Storage</li>
         <li class="w3-padding-16"><b>2 year</b> Support</li>
         <li class="w3-padding-16">
@@ -172,14 +178,15 @@
           <span class="w3-opacity">per month</span>
         </li>
         <li class="w3-light-grey w3-padding-24">
-          <button class="w3-button w3-green w3-padding-large">Sign Up</button>
-        </li>
+          <button class="w3-button w3-green w3-padding-large english btn-mid">Sign Up</button>
+          <button class="w3-button w3-green w3-padding-large hebrew btn-mid">הירשם</button>        </li>
       </ul>
     </div>
 
     <div class="w3-third w3-margin-bottom">
       <ul class="w3-ul w3-border w3-center w3-hover-shadow">
-        <li class="w3-black w3-xlarge w3-padding-32">Premium</li>
+        <li class="w3-black w3-xlarge w3-padding-32 english">Premium</li>
+        <li class="w3-black w3-xlarge w3-padding-32 hebrew">פּרמיה</li>
         <li class="w3-padding-16"><b>50GB</b> Storage</li>
         <li class="w3-padding-16"><b>3 year</b> Support</li>
         <li class="w3-padding-16">
@@ -187,8 +194,8 @@
           <span class="w3-opacity">per month</span>
         </li>
         <li class="w3-light-grey w3-padding-24">
-          <button class="w3-button w3-green w3-padding-large">Sign Up</button>
-        </li>
+          <button class="w3-button w3-green w3-padding-large english btn-mid">Sign Up</button>
+          <button class="w3-button w3-green w3-padding-large hebrew btn-mid">הירשם</button>        </li>
       </ul>
     </div>
   </div>
@@ -196,14 +203,16 @@
   <!-- Grid -->
   <div class="w3-row-padding" id="about">
     <div class="w3-center w3-padding-64">
-      <span class="w3-xlarge w3-bottombar w3-border-dark-grey w3-padding-16">Who We Are</span>
+      <span class="w3-xlarge w3-bottombar w3-border-dark-grey w3-padding-16 english inline">Who We Are</span>
+      <span class="w3-xlarge w3-bottombar w3-border-dark-grey w3-padding-16 hebrew">מי אנחנו</span>
     </div>
 
     <div class="w3-third w3-margin-bottom">
       <div class="w3-card-4">
         <div class="card-bg" style="background-image:url('images/moses-profile.jpg');"></div>        
         <div class="w3-container">
-          <h3>Moses Balkind</h3>
+          <h3 class="english">Moses Balkind</h3>
+          <h3 class="hebrew">משה בלקינד</h3>
           <p class="w3-opacity">CEO & Founder</p>
           <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
           <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
@@ -215,7 +224,8 @@
       <div class="w3-card-4">
         <div class="card-bg" style="background-image:url('images/team2.jpg');"></div>        
         <div class="w3-container">
-          <h3>Rafi Matthews</h3>
+          <h3 class="english">Rafi Matthews</h3>
+          <h3 class="hebrew">רפי מתיוס</h3>
           <p class="w3-opacity">Art Director</p>
           <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
           <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
@@ -227,7 +237,8 @@
       <div class="w3-card-4">
         <div class="card-bg" style="background-image:url('images/me6.png');"></div>
         <div class="w3-container">
-          <h3>John Doe</h3>
+          <h3 class="english">John Doe</h3>
+          <h3 class="hebrew">John Doe</h3>
           <p class="w3-opacity">Designer</p>
           <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
           <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
@@ -238,27 +249,33 @@
 
   <!-- Contact -->
   <div class="w3-center w3-padding-64" id="contact">
-    <span class="w3-xlarge w3-bottombar w3-border-dark-grey w3-padding-16">Contact Us</span>
+    <span class="w3-xlarge w3-bottombar w3-border-dark-grey w3-padding-16 english inline">Contact Us</span>
+    <span class="w3-xlarge w3-bottombar w3-border-dark-grey w3-padding-16 hebrew">ליצוֹר קשׁר</span>
   </div>
 
   <form class="w3-container form-container" action="/" target="_blank">
     <div class="w3-section">
-      <label>Name</label>
+      <label class="english">Name</label>
+      <label class="hebrew">שׁם</label>
       <input class="w3-input w3-border w3-hover-border-black" style="width:100%;" type="text" name="Name" required>
     </div>
     <div class="w3-section">
-      <label>Email</label>
+      <label class="english">Email</label>
+      <label class="hebrew">אימייל</label>
       <input class="w3-input w3-border w3-hover-border-black" style="width:100%;" type="text" name="Email" required>
     </div>
     <div class="w3-section">
-      <label>Subject</label>
+      <label class="english">Subject</label>
+      <label class="hebrew">נושא</label>
       <input class="w3-input w3-border w3-hover-border-black" style="width:100%;" name="Subject" required>
     </div>
     <div class="w3-section">
-      <label>Message</label>
+      <label class="english">Message</label>
+      <label class="hebrew">הודעה</label>
       <input class="w3-input w3-border w3-hover-border-black" style="width:100%;" name="Message" required>
     </div>
-    <button type="submit" class="w3-button w3-block w3-pink contact-sumbit">Send</button>
+    <button type="submit" class="w3-button w3-block w3-pink contact-sumbit english">Send</button>
+    <button type="submit" class="w3-button w3-block w3-pink contact-sumbit hebrew">שׁלח</button>
   </form>
 
 </div>
@@ -266,7 +283,8 @@
 <!-- Footer -->
 
 <footer class="w3-container w3-padding-32 w3-light-grey w3-center">
-  <a href="#" class="w3-button w3-black w3-margin"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <a href="#" class="w3-button w3-black english top-btn inline"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <a href="#" class="w3-button w3-black hebrew top-btn"><i class="fa fa-arrow-up w3-margin-right"></i>לפסגה</a>
   <div class="w3-xlarge w3-section contact-images">
     <a href="mailto:office@ikanoptics.com"><img src="images/c1.png"></a>
     <a href="tel:0515534255"><img src="images/c2.png"></a>
@@ -280,7 +298,8 @@
     <i class="fa fa-linkedin w3-hover-opacity"></i> -->
   </div>
   <br><br>
-  <p>Made by <a href="http://izzygld.com/" title="W3.CSS" target="_blank" class="w3-hover-text-green">Izzy Gold</a></p>
+  <p class="english">Made by <a href="http://izzygld.com/" target="_blank" class="w3-hover-text-green">Izzy Gold</a></p>
+  <p class="hebrew">מיוצר ע"י<a href="http://izzygld.com/" target="_blank" class="w3-hover-text-green">איזי גולד</a></p>
 </footer>
 <script src="js/index.js">
 </script>

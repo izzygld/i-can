@@ -7,6 +7,16 @@ html,body,h1,h2,h3,h4 {font-family:"Lato", sans-serif}
     margin: 0 auto;
     text-align: center;
 }
+.logo img,
+.big-image img,
+.btn-mid{
+    margin: 0 auto;
+    text-align: center;
+}
+.top-btn{
+      margin: 16px auto;
+  max-width: 100px;
+}
 img{
   max-width: 100%;
     height: auto;
@@ -44,7 +54,13 @@ background: black;
     color: white;
     border-radius: 10px;
 }
-
+label {
+    font-size: 16px;
+    padding-bottom: 2px;
+}
+.form-container .hebrew{
+text-align: right;
+}
 .contact-sumbit{
   margin: 0 auto;
   max-width: 200px;
@@ -69,3 +85,36 @@ background: black;
 .contact-images a:hover img{
     filter:drop-shadow(2px 2px 5px gray);
 }
+
+.hebrew-btn{
+    position: absolute;
+    top: 0px;
+    z-index: 9;
+    padding: 8px 12px;
+    color: #000;
+    background-color: #cddc39;
+    right: 0px;
+}
+.hebrew-btn:hover{
+    cursor: pointer;
+    background-color: #e9ff12;
+}
+
+
+.language{
+  padding: 0px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+select{
+    color: #000;
+    border: none;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 1px 0 rgba(0,0,0,0.2);
+    background-color: #e4ecf3;
+    padding: 4px 12px;
+}
+.english { display: block; }
+.english.inline { display: inline; }
+.spanish { display: none; }
+.hebrew { display: none; }
